@@ -5,8 +5,7 @@ const path = require("path");
 const fs = require("fs");
 
 const CHAT_IDS = [
-  "5214924920523-1633651119@g.us" // Test
-  // "120363337403652171@g.us", // Monitoreo StarTV Stream
+  "120363337403652171@g.us", // Monitoreo StarTV Stream
   // "5214921897369-1449534856@g.us", // Monitoreo
 ];
 
@@ -148,9 +147,7 @@ client.on("ready", () => {
 });
 
 client.on("message", async (msg) => {
-  const allowedChats = [...CHAT_IDS];
-  if (msg.fromMe) allowedChats.push(msg.from);
-  if (allowedChats.includes(msg.from)) {
+  if (CHAT_IDS.includes(msg.from)) {
     const body = msg.body.trim().toLowerCase();
 
     if (body === "!report") {

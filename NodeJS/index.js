@@ -21,6 +21,7 @@ function startWatcher(client, scriptRel, label) {
   console.log(`[${label}] Starting watcher: ${scriptAbs}`);
   const pyshell = new PythonShell(scriptRel, {
     mode: "text",
+    pythonPath: "/home/scott/Projects/IW-TWO/Python/venv/bin/python",
     pythonOptions: ["-u", "-X", "utf8"],
     scriptPath: PY_ROOT,
     env: {
@@ -82,6 +83,7 @@ async function runPythonScript(client, scriptRel, label, targetChat) {
   let output = "";
   const pyshell = new PythonShell(scriptRel, {
     mode: "text",
+    pythonPath: "/home/scott/Projects/IW-TWO/Python/venv/bin/python",
     pythonOptions: ["-u", "-X", "utf8"],
     scriptPath: PY_ROOT,
     env: {
@@ -174,6 +176,7 @@ client.on("message", async (msg) => {
 
       const pyshell = new PythonShell(scriptRel, {
         mode: "text",
+        pythonPath: "/home/scott/Projects/IW-TWO/Python/venv/bin/python",
         pythonOptions: ["-u", "-X", "utf8"],
         scriptPath: PY_ROOT,
       });

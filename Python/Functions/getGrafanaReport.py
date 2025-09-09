@@ -37,7 +37,7 @@ def count_colored_boxes(image: Image.Image):
 
 def get_grafana_report():
     # (Left, Top, Width, Height)
-    region = (10, 200, 1585, 860)  
+    region = (8, 180, 1120, 600)  
     screenshot = ImageGrab.grab(bbox=region)
 
     nodejs_images = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../NodeJS/images"))

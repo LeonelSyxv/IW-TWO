@@ -5,8 +5,8 @@ const path = require("path");
 const fs = require("fs");
 
 const CHAT_IDS = [
-  "120363421743509900@g.us" // Test
-  // "120363337403652171@g.us", // Monitoreo StarTV Stream
+  // "120363421743509900@g.us" // Test
+  "120363337403652171@g.us", // Monitoreo StarTV Stream
   // "5214921897369-1449534856@g.us", // Monitoreo
 ];
 

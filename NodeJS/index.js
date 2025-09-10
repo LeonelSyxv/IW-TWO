@@ -132,7 +132,7 @@ async function runPythonScript(client, scriptRel, label, targetChat) {
 }
 
 const client = new Client({
-  authStrategy: new LocalAuth({ dataPath: "./session" }),
+  authStrategy: new LocalAuth({ dataPath: path.resolve(__dirname, "./session") }),
 });
 
 client.on("qr", (qr) => {

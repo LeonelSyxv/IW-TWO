@@ -1,0 +1,8 @@
+pymysql
+pyautogui
+pyperclip
+pynput
+python-dotenv
+opencv-python
+pillow
+numpy

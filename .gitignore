@@ -1,2 +1,29 @@
 # Ignore node_modules folder in NodeJS
 NodeJS/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.env/
+
+# Environment Variables
+.env
+.env.*
+
+# User/IDE Files
+.vscode/
+*.code-workspace
+
+# Docker
+*.log
+docker-compose.override.yml
+iw-two.tar
+
+# Others
+.DS_Store
+Thumbs.db

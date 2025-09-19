@@ -133,6 +133,9 @@ async function runPythonScript(client, scriptRel, label, targetChat) {
 
 const client = new Client({
   authStrategy: new LocalAuth({ dataPath: path.resolve(__dirname, "./session") }),
+  puppeteer: {
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  }
 });
 
 client.on("qr", (qr) => {
